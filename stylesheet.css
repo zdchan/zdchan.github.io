@@ -273,9 +273,19 @@ body {
   font-size: 3rem;
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: -0.02em;
+}
+
+.chinese-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .bio {
@@ -528,7 +538,7 @@ body {
 /* 响应式设计 */
 @media (min-width: 768px) {
   .profile-container {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
   }
   

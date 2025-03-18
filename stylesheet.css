@@ -280,7 +280,7 @@ body {
 }
 
 .chinese-name {
-  font-family: 'KaiTi', 'STKaiti', 'SimKai', 'Kaiti SC', 'Kaiti TC', 'Palatino Linotype', serif;
+  font-family: 'KaiTi', 'STKaiti', 'SimKai', serif;
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--secondary-color);

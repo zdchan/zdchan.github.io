@@ -605,31 +605,50 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: var(--card-bg);
-  width: 50px;
-  height: 50px;
+  background-color: var(--primary-color);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   z-index: 1000;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .theme-toggle-fixed:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .theme-toggle-fixed {
+  background-color: var(--secondary-color);
 }
 
 .theme-toggle-fixed i {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  transition: var(--transition);
+  font-size: 2rem;
+  color: white;
+  transition: all 0.4s ease;
 }
 
 .theme-toggle-fixed:hover i {
-  color: var(--secondary-color);
-  transform: rotate(30deg);
+  transform: rotate(45deg);
+}
+
+/* 添加脉动动画 */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+  50% { transform: scale(1.05); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); }
+  100% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+}
+
+.theme-toggle-fixed {
+  animation: pulse 2s infinite;
+}
+
+.theme-toggle-fixed:hover {
+  animation: none;
 }

@@ -68,51 +68,51 @@
 
 /* 基础变量定义 - 亮色模式 */
 :root {
-  --primary-color: #2563eb;
-  --primary-dark: #1d4ed8;
-  --primary-light: #60a5fa;
-  --secondary-color: #f97316;
-  --secondary-dark: #ea580c;
-  --secondary-light: #fdba74;
-  --accent-color: #8b5cf6;
+  --primary-color: #3b6ea8;
+  --primary-dark: #2c547e;
+  --primary-light: #6b9bd1;
+  --secondary-color: #e67e22;
+  --secondary-dark: #d35400;
+  --secondary-light: #f39c12;
+  --accent-color: #9b59b6;
   --bg-color: #ffffff;
-  --text-color: #1e293b;
-  --text-light: #64748b;
-  --light-gray: #f1f5f9;
-  --mid-gray: #cbd5e1;
-  --dark-gray: #64748b;
-  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --text-color: #2c3e50;
+  --text-light: #7f8c8d;
+  --light-gray: #f5f7fa;
+  --mid-gray: #d6dce5;
+  --dark-gray: #7f8c8d;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   --transition: all 0.3s ease;
   --header-bg: #ffffff;
-  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   --card-bg: #ffffff;
-  --footer-bg: #f8fafc;
-  --border-color: #e2e8f0;
-  --hover-color: #f8fafc;
+  --footer-bg: #f9fafb;
+  --border-color: #eaeff5;
+  --hover-color: #f9fafb;
 }
 
 /* 暗色模式变量 */
 .dark-mode {
-  --primary-color: #3b82f6;
-  --primary-dark: #2563eb;
-  --primary-light: #93c5fd;
-  --secondary-color: #f97316;
-  --secondary-dark: #ea580c;
-  --secondary-light: #fdba74;
-  --accent-color: #a78bfa;
-  --bg-color: #0f172a;
-  --text-color: #e2e8f0;
-  --text-light: #94a3b8;
-  --light-gray: #1e293b;
-  --mid-gray: #334155;
-  --dark-gray: #94a3b8;
-  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  --header-bg: #1e293b;
-  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  --card-bg: #1e293b;
-  --footer-bg: #0f172a;
-  --border-color: #334155;
-  --hover-color: #1e293b;
+  --primary-color: #5b8fc5;
+  --primary-dark: #3b6ea8;
+  --primary-light: #89b3de;
+  --secondary-color: #f39c12;
+  --secondary-dark: #e67e22;
+  --secondary-light: #f8c471;
+  --accent-color: #a569bd;
+  --bg-color: #121f2f;
+  --text-color: #ecf0f1;
+  --text-light: #bdc3c7;
+  --light-gray: #1e3246;
+  --mid-gray: #34495e;
+  --dark-gray: #bdc3c7;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --header-bg: #1e3246;
+  --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  --card-bg: #1e3246;
+  --footer-bg: #121f2f;
+  --border-color: #34495e;
+  --hover-color: #1e3246;
 }
 
 /* 基础样式 */

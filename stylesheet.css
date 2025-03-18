@@ -216,7 +216,7 @@ body {
 /* 主要内容区 */
 .main-container {
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
@@ -232,7 +232,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .bio-container {
@@ -598,4 +598,38 @@ body {
     box-shadow: none;
     border: 1px solid #ddd;
   }
+}
+
+/* 固定在角落的主题切换按钮 */
+.theme-toggle-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--card-bg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.theme-toggle-fixed:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-fixed i {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.theme-toggle-fixed:hover i {
+  color: var(--secondary-color);
+  transform: rotate(30deg);
 }

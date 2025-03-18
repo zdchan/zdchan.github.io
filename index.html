@@ -13,31 +13,6 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="logo">Hui Zhang</a>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#talks">Talks</a></li>
-            <li><a href="#reviewing">Reviewing</a></li>
-            <li class="theme-toggle">
-              <i class="fas fa-moon" id="dark-mode-toggle"></i>
-            </li>
-            <li class="language-toggle">
-              <a href="#" id="lang-toggle">中文</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-
     <main class="main-container">
       <!-- About Section -->
       <section id="about" class="section fadeIn">
@@ -203,17 +178,13 @@
 
     <!-- JavaScript -->
     <script>
-      // Mobile navigation
       document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        hamburger.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-          hamburger.classList.toggle('active');
-        });
-        
         // Dark/Light Mode Toggle
+        const toggleSwitch = document.createElement('div');
+        toggleSwitch.className = 'theme-toggle-fixed';
+        toggleSwitch.innerHTML = '<i class="fas fa-moon" id="dark-mode-toggle"></i>';
+        document.body.appendChild(toggleSwitch);
+        
         const darkModeToggle = document.getElementById('dark-mode-toggle');
         const body = document.body;
         
@@ -241,15 +212,6 @@
           }
         });
         
-        // Language Toggle
-        const langToggle = document.getElementById('lang-toggle');
-        langToggle.addEventListener('click', function(e) {
-          e.preventDefault();
-          // In a real implementation, this would toggle between languages
-          // For now we'll just swap the button text
-          this.textContent = this.textContent === '中文' ? 'English' : '中文';
-        });
-        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function(e) {
@@ -259,10 +221,6 @@
               document.querySelector(targetId).scrollIntoView({
                 behavior: 'smooth'
               });
-              
-              // Close mobile menu if open
-              navLinks.classList.remove('active');
-              hamburger.classList.remove('active');
             }
           });
         });

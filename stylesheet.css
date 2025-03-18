@@ -280,13 +280,13 @@ body {
 }
 
 .chinese-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: 'KaiTi', 'STKaiti', 'SimKai', 'Kaiti SC', 'Kaiti TC', 'Palatino Linotype', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
   color: var(--secondary-color);
   margin-bottom: 25px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
 }
 
 .bio {

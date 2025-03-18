@@ -68,13 +68,13 @@
 
 /* 基础变量定义 - 亮色模式 */
 :root {
-  --primary-color: #3b6ea8;
-  --primary-dark: #2c547e;
-  --primary-light: #6b9bd1;
-  --secondary-color: #e67e22;
-  --secondary-dark: #d35400;
-  --secondary-light: #f39c12;
-  --accent-color: #9b59b6;
+  --primary-color: #445566;
+  --primary-dark: #2c3e50;
+  --primary-light: #7f8c8d;
+  --secondary-color: #cc7722;
+  --secondary-dark: #a85400;
+  --secondary-light: #e1a95f;
+  --accent-color: #8e44ad;
   --bg-color: #ffffff;
   --text-color: #2c3e50;
   --text-light: #7f8c8d;
@@ -93,13 +93,13 @@
 
 /* 暗色模式变量 */
 .dark-mode {
-  --primary-color: #5b8fc5;
-  --primary-dark: #3b6ea8;
-  --primary-light: #89b3de;
-  --secondary-color: #f39c12;
-  --secondary-dark: #e67e22;
-  --secondary-light: #f8c471;
-  --accent-color: #a569bd;
+  --primary-color: #607d8b;
+  --primary-dark: #455a64;
+  --primary-light: #90a4ae;
+  --secondary-color: #d7a55c;
+  --secondary-dark: #b38044;
+  --secondary-light: #e6c992;
+  --accent-color: #9575cd;
   --bg-color: #121f2f;
   --text-color: #ecf0f1;
   --text-light: #bdc3c7;
@@ -251,6 +251,7 @@ body {
 
 .bio-container {
   flex: 1;
+  text-align: center;
 }
 
 .profile-image-container {
@@ -538,8 +539,13 @@ body {
 /* 响应式设计 */
 @media (min-width: 768px) {
   .profile-container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+  }
+  
+  .bio-container {
+    flex: 1;
+    text-align: left;
   }
   
   .profile-image-container {

@@ -256,11 +256,11 @@ body {
 
 .profile-image-container {
   text-align: center;
-  flex: 0 0 450px;
+  flex: 0 0 430px;
 }
 
 .profile-image {
-  max-width: 450px;
+  max-width: 430px;
   width: 100%;
   border-radius: 14px;
   box-shadow: var(--box-shadow);
@@ -552,7 +552,7 @@ body {
   }
   
   .profile-image-container {
-    flex: 0 0 450px;
+    flex: 0 0 430px;
   }
   
  .publication-item {

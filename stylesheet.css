@@ -256,11 +256,13 @@ body {
 
 .profile-image-container {
   text-align: center;
+  flex: 0 0 400px;
 }
 
 .profile-image {
-  max-width: 300px;
-  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
   box-shadow: var(--box-shadow);
   transition: var(--transition);
 }
@@ -541,6 +543,7 @@ body {
   .profile-container {
     flex-direction: row-reverse;
     align-items: center;
+    gap: 50px;
   }
   
   .bio-container {
@@ -549,7 +552,7 @@ body {
   }
   
   .profile-image-container {
-    flex: 0 0 300px;
+    flex: 0 0 400px;
   }
   
  .publication-item {

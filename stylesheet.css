@@ -257,6 +257,7 @@ body {
 .profile-image-container {
   text-align: center;
   flex: 0 0 430px;
+  margin-top: 35px;
 }
 
 .profile-image {
@@ -542,7 +543,7 @@ body {
 @media (min-width: 768px) {
   .profile-container {
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     gap: 60px;
   }
   
@@ -553,6 +554,7 @@ body {
   
   .profile-image-container {
     flex: 0 0 430px;
+    margin-top: 35px;
   }
   
  .publication-item {

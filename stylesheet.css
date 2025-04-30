@@ -386,7 +386,7 @@ body {
 }
 
 .publication-title {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 12px;
@@ -560,8 +560,13 @@ body {
   }
   
   .publication-media {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+  
+  .publication-content {
+    flex: 0 0 62%;
+    max-width: 62%;
   }
 }
 
@@ -625,7 +630,7 @@ body {
   }
   
   .publication-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 

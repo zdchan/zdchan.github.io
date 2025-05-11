@@ -440,11 +440,13 @@ body {
 .talks-container, .reviews-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .talk-item, .review-item {
   display: flex;
+  align-items: flex-start;
+  gap: 18px;
   background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: var(--box-shadow);
@@ -459,14 +461,14 @@ body {
 }
 
 .talk-date, .review-date {
-  padding: 22px;
   min-width: 240px;
+  width: 240px;
+  padding: 18px;
   background-color: var(--light-gray);
   color: var(--primary-color);
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  flex-shrink: 0;
   border-right: 1px solid var(--border-color);
 }
 
@@ -615,6 +617,7 @@ body {
   
   .talk-date, .review-date {
     width: 100%;
+    min-width: 100%;
     padding: 10px;
   }
 }
@@ -709,53 +712,4 @@ body {
 
 .theme-toggle-fixed:hover {
   animation: none;
-}
-
-.talks-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.talk-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-.talk-date {
-  min-width: 240px;
-  width: 240px;
-  text-align: left;
-  color: #555;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-.talk-content {
-  flex: 1;
-}
-
-.reviews-container {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.review-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-.review-date {
-  min-width: 240px;
-  width: 240px;
-  text-align: left;
-  color: #555;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.review-content {
-  flex: 1;
 }

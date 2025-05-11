@@ -463,13 +463,17 @@ body {
 .talk-date, .review-date {
   min-width: 240px;
   width: 240px;
-  padding: 18px;
+  padding: 0 18px;
   background-color: var(--light-gray);
   color: var(--primary-color);
   font-weight: 600;
   text-align: left;
   flex-shrink: 0;
   border-right: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .talk-content, .review-content {

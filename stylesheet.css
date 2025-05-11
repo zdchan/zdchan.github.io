@@ -465,6 +465,9 @@ body {
   font-weight: 600;
   padding: 20px;
   border-right: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .talk-content, .review-content {

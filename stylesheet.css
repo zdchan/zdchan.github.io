@@ -710,3 +710,52 @@ body {
 .theme-toggle-fixed:hover {
   animation: none;
 }
+
+.talks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.talk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.talk-date {
+  min-width: 140px;
+  width: 140px;
+  text-align: left;
+  color: #555;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.talk-content {
+  flex: 1;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.review-date {
+  min-width: 140px;
+  width: 140px;
+  text-align: left;
+  color: #555;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.review-content {
+  flex: 1;
+}

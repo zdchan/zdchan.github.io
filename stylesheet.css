@@ -436,17 +436,16 @@ body {
   font-size: 1rem;
 }
 
-/* 演讲部分 */
+/* 演讲和评审部分 - 全新样式 */
 .talks-container, .reviews-container {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .talk-item, .review-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
   background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: var(--box-shadow);
@@ -461,24 +460,15 @@ body {
 }
 
 .talk-date, .review-date {
-  min-width: 240px;
-  width: 240px;
-  padding: 0 18px;
   background-color: var(--light-gray);
   color: var(--primary-color);
   font-weight: 600;
-  text-align: left;
-  flex-shrink: 0;
+  padding: 20px;
   border-right: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
 }
 
 .talk-content, .review-content {
   padding: 20px;
-  flex: 1;
 }
 
 .talk-title {
@@ -616,13 +606,13 @@ body {
   }
   
   .talk-item, .review-item {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   
   .talk-date, .review-date {
-    width: 100%;
-    min-width: 100%;
-    padding: 10px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 20px;
   }
 }
 

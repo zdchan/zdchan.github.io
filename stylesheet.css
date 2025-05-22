@@ -442,8 +442,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-height: 220px;
-  overflow-y: scroll;
+  max-height: 300px;
+  overflow-y: auto;
   padding-right: 10px;
 }
 
@@ -475,6 +475,7 @@ body {
   overflow: hidden;
   transition: var(--transition);
   border: 1px solid var(--border-color);
+  flex-shrink: 0;
 }
 
 .talk-item:hover, .review-item:hover {

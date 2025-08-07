@@ -92,6 +92,7 @@
 }
 
 /* 暗色模式变量 */
+/*
 .dark-mode {
   --primary-color: #607d8b;
   --primary-dark: #455a64;
@@ -114,6 +115,7 @@
   --border-color: #34495e;
   --hover-color: #1e3246;
 }
+*/
 
 /* 基础样式 */
 * {
@@ -683,6 +685,7 @@ body {
 }
 
 /* 固定在角落的主题切换按钮 */
+/*
 .theme-toggle-fixed {
   position: fixed;
   bottom: 30px;
@@ -721,6 +724,7 @@ body {
 }
 
 /* 添加脉动动画 */
+/*
 @keyframes pulse {
   0% { transform: scale(1); box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
   50% { transform: scale(1.05); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); }
@@ -734,3 +738,4 @@ body {
 .theme-toggle-fixed:hover {
   animation: none;
 }
+*/

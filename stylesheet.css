@@ -355,6 +355,16 @@ body {
   font-size: 1.05rem;
 }
 
+.service-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 3px solid var(--secondary-color);
+}
+
 /* 出版物项 */
 .publication-item {
   display: flex;

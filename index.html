@@ -13,6 +13,29 @@
   </head>
 
   <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">Hui Zhang</a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#academic-service">Service</a></li>
+            <li class="theme-toggle"><i class="fas fa-moon" id="dark-mode-toggle"></i></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <main class="main-container">
       <!-- About Section -->
       <section id="about" class="section fadeIn">
@@ -21,14 +44,11 @@
             <h1 class="name">Hui Zhang</h1>
             <h2 class="chinese-name">张 辉</h2>
             <p class="bio">
-              I am currently a PhD student at <a href="https://pdz.ethz.ch/the-group/people/hui-zhang.html"> PDZ, ETH Zurich</a>, supervised by Prof. <a href="https://pdz.ethz.ch/the-group/people/meboldt.html">Mirko Meboldt</a> and Prof. <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>. Prior to this, I work as a research assistant at <a href="https://ait.ethz.ch/">AIT lab</a>, ETH Zurich, supervised by Prof. <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a> and a research intern at <a href="https://ps.is.mpg.de/">Perceiving Systems lab</a>, MPI, supervised by Prof. <a href="https://ps.is.mpg.de/~black">Michael Black</a>.
+              I am currently a PhD student at <a href="https://pdz.ethz.ch/the-group/people/hui-zhang.html"> PDZ, ETH Zurich</a>, supervised by Prof. <a href="https://pdz.ethz.ch/the-group/people/meboldt.html">Mirko Meboldt</a> and Prof. <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>.
             </p>
             <p class="bio">
-                  I received my master's degree in Robotics, Systems & Control at <a href="https://ethz.ch/en.html">ETH Zurich</a>. During my master, I completed my master thesis at <a href="https://rsl.ethz.ch//">Robotic Systems Lab</a>, ETH Zurich, supervised by Prof. <a href="https://rsl.ethz.ch/the-lab/people/person-detail.MTIxOTEx.TGlzdC8yNDQxLC0xNDI1MTk1NzM1.html">Marco Hutter</a> and my semester project at <a href="https://crl.ethz.ch/index.html">Computational Robotics Lab</a>, ETH Zurich, supervised by Prof. <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros</a>. Previously, I got my bachelor's degree from <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, with my thesis completed in <a href="https://langerlab.mit.edu/">Langer Lab</a>, MIT.                
-                </p>
-            <p class="bio">
-                  Currently, my research interests lie in physics-based hand-object interaction, dexterous robotic hand manipulation, and their applications in daily life and industry.
-                </p>
+              My research interests lie in <strong>physics-based hand-object interaction</strong>, <strong>dexterous robotic hand manipulation</strong>, and their applications in daily life and industry.
+            </p>
             <div class="social-links">
               <a href="mailto:huizhang@ethz.ch" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
               <a href="https://www.linkedin.com/in/hui-zhang-064252183/?originalSubdomain=ch" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -43,8 +63,95 @@
         </div>
       </section>
 
+      <!-- Education & Experience Section -->
+      <section id="education" class="section fadeIn delay-1">
+        <h2 class="section-title">Education & Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 – Present</div>
+              <h3>PhD Student</h3>
+              <p><a href="https://pdz.ethz.ch/the-group/people/hui-zhang.html">PDZ</a>, ETH Zurich</p>
+              <p class="timeline-detail">Supervised by Prof. <a href="https://pdz.ethz.ch/the-group/people/meboldt.html">Mirko Meboldt</a> and Prof. <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a></p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 – 2023</div>
+              <h3>Research Assistant</h3>
+              <p><a href="https://ait.ethz.ch/">AIT Lab</a>, ETH Zurich</p>
+              <p class="timeline-detail">Supervised by Prof. <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a></p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022</div>
+              <h3>Research Intern</h3>
+              <p><a href="https://ps.is.mpg.de/">Perceiving Systems Lab</a>, Max Planck Institute</p>
+              <p class="timeline-detail">Supervised by Prof. <a href="https://ps.is.mpg.de/~black">Michael Black</a></p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2020 – 2023</div>
+              <h3>MSc Robotics, Systems & Control</h3>
+              <p><a href="https://ethz.ch/en.html">ETH Zurich</a></p>
+              <p class="timeline-detail">Thesis at <a href="https://rsl.ethz.ch/">Robotic Systems Lab</a> (Prof. <a href="https://rsl.ethz.ch/the-lab/people/person-detail.MTIxOTEx.TGlzdC8yNDQxLC0xNDI1MTk1NzM1.html">Marco Hutter</a>); Semester project at <a href="https://crl.ethz.ch/index.html">Computational Robotics Lab</a> (Prof. <a href="https://crl.ethz.ch/people/coros/index.html">Stelian Coros</a>)</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2016 – 2020</div>
+              <h3>BSc</h3>
+              <p><a href="https://www.zju.edu.cn/english/">Zhejiang University</a></p>
+              <p class="timeline-detail">Thesis completed at <a href="https://langerlab.mit.edu/">Langer Lab</a>, MIT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="section fadeIn delay-1">
+        <h2 class="section-title">News</h2>
+        <div class="news-container">
+          <div class="news-item">
+            <span class="news-date">2026</span>
+            <span class="news-text">Co-organizing <strong>ICRA 2026 Workshop on Manipulation Robustness</strong>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.11</span>
+            <span class="news-text">Invited talk at <a href="https://www.sharpa.com/">Sharpa Robotics</a>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.09</span>
+            <span class="news-text"><a href="https://arxiv.org/abs/2504.05287">RobustDexGrasp</a> accepted at <strong>CoRL 2025</strong> as <strong>Spotlight Presentation</strong>!</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.09</span>
+            <span class="news-text"><a href="https://arxiv.org/pdf/2411.16755">FunGrasp</a> accepted at <strong>RA-L</strong> and <strong>IROS 2025</strong>, and received <strong>Best Poster Award</strong> at 2nd Workshop on Dexterous Manipulation at CoRL.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025.05</span>
+            <span class="news-text">Invited talk at <a href="https://space.bilibili.com/483478083">3D Vision Workshop</a>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2024.07</span>
+            <span class="news-text"><a href="https://arxiv.org/pdf/2403.19649.pdf">GraspXL</a> accepted at <strong>ECCV 2024</strong>!</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2024.01</span>
+            <span class="news-text"><a href="https://arxiv.org/pdf/2309.03891.pdf">ArtiGrasp</a> accepted at <strong>3DV 2024</strong> as <strong>Spotlight Presentation</strong>!</span>
+          </div>
+        </div>
+      </section>
+
       <!-- Publications Section -->
-      <section id="publications" class="section fadeIn delay-1">
+      <section id="publications" class="section fadeIn delay-2">
         <h2 class="section-title">Selected Publications</h2>
         <p class="section-subtitle"><em>* indicates equal contribution</em></p>
 
@@ -56,11 +163,12 @@
           </div>
           <div class="publication-content">
             <h3 class="publication-title">RobustDexGrasp: Robust Dexterous Grasping of General Objects</h3>
+            <p class="publication-summary">A robust framework for dexterous grasping that generalizes to diverse novel objects with varying shapes and sizes.</p>
             <p class="publication-authors">
-              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>, 
-              <a href="https://zdchan.github.io/Robust_DexGrasp/">Zijian Wu*</a>, 
-              <a href="https://zdchan.github.io/Robust_DexGrasp/">Linyi Huang</a>, 
-              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>, 
+              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>,
+              <a href="https://zdchan.github.io/Robust_DexGrasp/">Zijian Wu*</a>,
+              <a href="https://zdchan.github.io/Robust_DexGrasp/">Linyi Huang</a>,
+              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>,
               <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>
             </p>
             <p class="publication-venue">Conference on Robot Learning (CoRL), 2025, <strong>Spotlight Presentation</strong></p>
@@ -80,11 +188,12 @@
           </div>
           <div class="publication-content">
             <h3 class="publication-title">FunGrasp: Functional Grasping for Diverse Dexterous Hands</h3>
+            <p class="publication-summary">Enabling functional grasping across diverse dexterous hand morphologies for task-oriented manipulation.</p>
             <p class="publication-authors">
-              <a href="https://hly-123.github.io/FunGrasp/">Linyi Huang*</a>, 
-              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>, 
-              <a href="https://hly-123.github.io/FunGrasp/">Zijian Wu</a>, 
-              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>, 
+              <a href="https://hly-123.github.io/FunGrasp/">Linyi Huang*</a>,
+              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>,
+              <a href="https://hly-123.github.io/FunGrasp/">Zijian Wu</a>,
+              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>,
               <a href="https://ait.ethz.ch/people/song">Jie Song</a>
             </p>
             <p class="publication-venue">Robotics and Automation Letters (RA-L), 2025</p>
@@ -96,7 +205,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="publication-item">
           <div class="publication-media">
             <video autoplay controls muted loop>
@@ -105,11 +214,12 @@
           </div>
           <div class="publication-content">
             <h3 class="publication-title">GraspXL: Generating Grasping Motions for Diverse Objects at Scale</h3>
+            <p class="publication-summary">A scalable approach to generating diverse grasping motions for a large variety of objects.</p>
             <p class="publication-authors">
-              <strong><a href="https://zdchan.github.io">Hui Zhang</a></strong>, 
-              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>, 
-              <a href="https://ait.ethz.ch/people/zfan">Zicong Fan</a>, 
-              <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>, 
+              <strong><a href="https://zdchan.github.io">Hui Zhang</a></strong>,
+              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a>,
+              <a href="https://ait.ethz.ch/people/zfan">Zicong Fan</a>,
+              <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>,
               <a href="https://ait.ethz.ch/people/song">Jie Song</a>
             </p>
             <p class="publication-venue">European Conference on Computer Vision (ECCV), 2024</p>
@@ -120,7 +230,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="publication-item">
           <div class="publication-media">
             <video autoplay controls muted loop>
@@ -129,13 +239,14 @@
           </div>
           <div class="publication-content">
             <h3 class="publication-title">ArtiGrasp: Physically Plausible Synthesis of Bi-Manual Dexterous Grasping and Articulation</h3>
+            <p class="publication-summary">Synthesizing physically plausible bi-manual dexterous grasping and articulation of objects via reinforcement learning.</p>
             <p class="publication-authors">
-              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>, 
-              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen*</a>, 
-              <a href="https://ait.ethz.ch/people/zfan">Zicong Fan</a>, 
-              Luocheng Zheng, 
-              <a href="https://www.railab.kaist.ac.kr/sections/members">Jemin Hwangbo</a>, 
-              <a href="https://ait.ethz.ch/people/song">Jie Song</a>, 
+              <strong><a href="https://zdchan.github.io">Hui Zhang*</a></strong>,
+              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen*</a>,
+              <a href="https://ait.ethz.ch/people/zfan">Zicong Fan</a>,
+              Luocheng Zheng,
+              <a href="https://www.railab.kaist.ac.kr/sections/members">Jemin Hwangbo</a>,
+              <a href="https://ait.ethz.ch/people/song">Jie Song</a>,
               <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>
             </p>
             <p class="publication-venue">International Conference on 3D Vision (3DV), 2024, <strong>Spotlight Presentation</strong></p>
@@ -168,8 +279,8 @@
               <p class="talk-links"><a href="https://www.bilibili.com/video/BV17y75zhEjr/?spm_id_from=333.1387.upload.video_card.click&vd_source=9a9a0f54829e19a90c3842faa89dd743"><i class="fas fa-play-circle"></i> Recording</a></p>
             </div>
           </div>
-          
-                              
+
+
           <div class="talk-item">
             <div class="talk-date">May 10, 2025</div>
             <div class="talk-content">
@@ -185,7 +296,7 @@
               <p>Department of Computer Science, National University of Singapore (NUS)</p>
             </div>
           </div>
-          
+
           <div class="talk-item">
             <div class="talk-date">September 16, 2024</div>
             <div class="talk-content">
@@ -193,7 +304,7 @@
               <p>Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University</p>
             </div>
           </div>
-          
+
           <div class="talk-item">
             <div class="talk-date">September 4, 2024</div>
             <div class="talk-content">
@@ -239,38 +350,33 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Hui Zhang</p>
+        <p>&copy; <span id="current-year"></span> Hui Zhang</p>
       </div>
     </footer>
 
     <!-- JavaScript -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Dark/Light Mode Toggle - 已注释掉
-        /*
-        const toggleSwitch = document.createElement('div');
-        toggleSwitch.className = 'theme-toggle-fixed';
-        toggleSwitch.innerHTML = '<i class="fas fa-moon" id="dark-mode-toggle"></i>';
-        document.body.appendChild(toggleSwitch);
-        
+        // Dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Dark/Light Mode Toggle
         const darkModeToggle = document.getElementById('dark-mode-toggle');
         const body = document.body;
-        
+
         // Check for saved theme preference or use preferred color scheme
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          body.classList.add(savedTheme);
-          if (savedTheme === 'dark-mode') {
-            darkModeToggle.classList.replace('fa-moon', 'fa-sun');
-          }
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (savedTheme === 'dark-mode') {
+          body.classList.add('dark-mode');
+          darkModeToggle.classList.replace('fa-moon', 'fa-sun');
+        } else if (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
           body.classList.add('dark-mode');
           darkModeToggle.classList.replace('fa-moon', 'fa-sun');
         }
-        
+
         darkModeToggle.addEventListener('click', function() {
           body.classList.toggle('dark-mode');
-          
+
           if (body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark-mode');
             this.classList.replace('fa-moon', 'fa-sun');
@@ -279,17 +385,59 @@
             this.classList.replace('fa-sun', 'fa-moon');
           }
         });
-        */
-        
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', function() {
+          this.classList.toggle('active');
+          navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+          });
+        });
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href') !== '#') {
               e.preventDefault();
               const targetId = this.getAttribute('href');
-              document.querySelector(targetId).scrollIntoView({
-                behavior: 'smooth'
-              });
+              const target = document.querySelector(targetId);
+              if (target) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          });
+        });
+
+        // Active nav link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+        window.addEventListener('scroll', function() {
+          const headerHeight = document.querySelector('.header').offsetHeight;
+          let current = '';
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - headerHeight - 20;
+            if (window.pageYOffset >= sectionTop) {
+              current = section.getAttribute('id');
+            }
+          });
+          navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === '#' + current) {
+              item.classList.add('active');
             }
           });
         });

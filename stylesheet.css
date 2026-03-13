@@ -595,9 +595,25 @@ body {
 }
 
 .publication-authors {
+  font-family: 'Source Serif 4', 'Georgia', serif;
   margin-bottom: 15px;
   color: var(--text-light);
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.publication-authors a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.publication-authors a:hover {
+  color: var(--secondary-color);
+}
+
+.publication-authors strong a {
+  color: var(--text-color);
 }
 
 .publication-venue {

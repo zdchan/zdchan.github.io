@@ -471,6 +471,30 @@ body {
 /* ==================== */
 /* Education timeline    */
 /* ==================== */
+.education-container {
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.education-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.education-container::-webkit-scrollbar-track {
+  background: var(--light-gray);
+  border-radius: 10px;
+}
+
+.education-container::-webkit-scrollbar-thumb {
+  background: var(--mid-gray);
+  border-radius: 10px;
+}
+
+.education-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
 .timeline {
   position: relative;
   padding-left: 30px;

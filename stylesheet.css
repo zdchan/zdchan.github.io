@@ -472,7 +472,7 @@ body {
 /* Education timeline    */
 /* ==================== */
 .education-container {
-  max-height: 285px;
+  max-height: 325px;
   overflow-y: auto;
   padding-right: 10px;
 }

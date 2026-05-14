@@ -18,7 +18,7 @@
       <div class="container">
         <nav class="navbar">
           <a href="#" class="logo">Hui Zhang</a>
-          <ul class="nav-links">
+          <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#news">News</a></li>
@@ -27,7 +27,7 @@
             <li><a href="#academic-service">Service</a></li>
             <li class="theme-toggle"><i class="fas fa-moon" id="dark-mode-toggle"></i></li>
           </ul>
-          <div class="hamburger" id="hamburger">
+          <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -406,17 +406,41 @@
         // Hamburger menu toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', function() {
-          this.classList.toggle('active');
-          navLinks.classList.toggle('active');
+        function setMobileMenu(open) {
+          hamburger.classList.toggle('active', open);
+          navLinks.classList.toggle('active', open);
+          hamburger.setAttribute('aria-expanded', String(open));
+        }
+
+        hamburger.addEventListener('click', function(e) {
+          e.stopPropagation();
+          setMobileMenu(!navLinks.classList.contains('active'));
+        });
+
+        hamburger.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setMobileMenu(!navLinks.classList.contains('active'));
+          }
         });
 
         // Close mobile menu when clicking a nav link
         document.querySelectorAll('.nav-links a').forEach(link => {
           link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
+            setMobileMenu(false);
           });
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.navbar')) {
+            setMobileMenu(false);
+          }
+        });
+
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            setMobileMenu(false);
+          }
         });
 
         // Smooth scrolling for anchor links

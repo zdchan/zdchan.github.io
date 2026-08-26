@@ -760,6 +760,25 @@ body {
   line-height: 1.4;
 }
 
+.talk-subtitle {
+  margin-top: -6px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.talk-venue a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.talk-venue a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
 .talk-links {
   margin-top: 10px;
 }

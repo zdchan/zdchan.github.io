@@ -945,6 +945,7 @@ body {
 
   .publication-item {
     flex-direction: row;
+    align-items: center;
   }
 
   .publication-media {

@@ -715,8 +715,8 @@ body {
   font-family: 'Source Serif 4', 'Georgia', serif;
   margin-bottom: 15px;
   color: var(--text-light);
-  font-size: 0.88rem;
-  line-height: 1.65;
+  font-size: 0.80rem;
+  line-height: 1.6;
 }
 
 .publication-authors a {
@@ -735,8 +735,8 @@ body {
 
 .publication-venue {
   font-style: italic;
-  margin: 0 0 4px;
-  line-height: 1.45;
+  margin: 0 0 1px;
+  line-height: 1.35;
   color: var(--dark-gray);
 }
 

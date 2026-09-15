@@ -682,9 +682,12 @@ body {
 
 .publication-media video,
 .publication-media img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  object-position: center;
   display: block;
 }
 
@@ -712,8 +715,8 @@ body {
   font-family: 'Source Serif 4', 'Georgia', serif;
   margin-bottom: 15px;
   color: var(--text-light);
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 0.88rem;
+  line-height: 1.65;
 }
 
 .publication-authors a {
@@ -732,8 +735,13 @@ body {
 
 .publication-venue {
   font-style: italic;
-  margin-bottom: 15px;
+  margin: 0 0 4px;
+  line-height: 1.45;
   color: var(--dark-gray);
+}
+
+.publication-content > .publication-venue:last-of-type {
+  margin-bottom: 12px;
 }
 
 .publication-links {

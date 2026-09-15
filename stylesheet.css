@@ -675,7 +675,8 @@ body {
   overflow: hidden;
 }
 
-.publication-media video {
+.publication-media video,
+.publication-media img {
   width: 100%;
   height: auto;
   display: block;
